@@ -1,16 +1,41 @@
 //Como crear un componente desde 0
 // El nombre de un componente debe iniciar en Mayusculas
 // El componente es una guncion 
-
+// paso 1: importar usestate
+import { useState } from "react";
+import Heder from './Heder';
+import Footer from "./Footer";
+import FormRegister from "./Form";
+import FormUser from "./FormUser";
 const PrimerComponente = () => {
+  // al usar use statte, la forma en la que se crea una variable cambia
+  //debemos definir el nombre de la variable y la funcion que cambia la variable
+  const [count, setCount] = useState(0);
+
+
   // retornar una vista
   // usamos return () para indicar que lo que este dentro sera el objeto visual a retornar
+  const sumar = () => {
+    setCount(count + 1);
+  }
+
+  const restar = () => {
+    setCount(count - 1);
+  }
   return (
     <div>
-      <h1>Hola mundo</h1>
-      <div>
-      <h4>Hola mundo desde el componente</h4>
-      </div>
+      <Heder />
+      {/* <h1>Formulario de usuarios</h1> */}
+      {/* <div>
+      <h4>Hola mundo desde el componente {count}</h4>
+
+      <button onClick={sumar}>Sumar</button>
+      <button onClick={restar}>Restar</button>
+      </div> */} 
+      <hr/>
+      {/* <FormRegister /> */}
+      <FormUser />
+      <Footer />
     </div>
   )
 }

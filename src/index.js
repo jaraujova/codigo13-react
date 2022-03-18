@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Home from './pages/Home';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 //import App from './App';
-import PrimerComponente from './App';
+//import PrimerComponente from './App';
+
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <PrimerComponente />
+    {/* <PrimerComponente /> */}
+    <Home/>
   </React.StrictMode>,
   document.getElementById('root')
 );
