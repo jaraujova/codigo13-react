@@ -49,7 +49,7 @@ describe("Mi primera prueba con cypress", () => {
         cy.visit("https://codigo13-react-tawny.vercel.app/youtube");
 
         //https://codigo13-react-tawny.vercel.app/youtube
-        cy.contains("name 33");
+        cy.contains("hola");
     })
 
     it("prueba de Login", () =>{
