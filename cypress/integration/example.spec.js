@@ -11,7 +11,7 @@ describe("Mi primera prueba con cypress", () => {
       // aca vamos a verificar si es que nuestro home funciona o no
       //cy => cypress
       // Esto va a entrar a localhost:3000 y decirno si funciona o no
-      cy.visit("http://localhost:3000/");
+      cy.visit("https://codigo13-react-tawny.vercel.app/");
       // contains
       // Esto sirve para poder buscar algun texto en nuestra pagina
       // que busque la palabra pokedex
@@ -28,29 +28,30 @@ describe("Mi primera prueba con cypress", () => {
   
     // vamos a crear a otra prueba para /flags
     
-    // it("pruebas para banderas", () => {
-    //   cy.visit("http://localhost:3000/flags");
-    //   // vamos a ver como podemos escribir en un input
-    //   // Estamos buscando el primero input y luego de encontrarlos
-    //   // estamos escribiendo peru en dicho input
-    //   cy.wait(5000).then(() => {
-    //     cy.get("input:first").type("peru");
-    //     cy.contains("Peru").click();
-    //     cy.contains("Lima");
-    //   });
-    // });
+    it("pruebas para banderas", () => {
+      cy.visit("https://codigo13-react-tawny.vercel.app/flags");
+      // vamos a ver como podemos escribir en un input
+      // Estamos buscando el primero input y luego de encontrarlos
+      // estamos escribiendo peru en dicho input
+      cy.wait(5000).then(() => {
+        cy.get("input:first").type("peru");
+        cy.contains("Peru").click();
+        cy.contains("Lima");
+      });
+    });
 
 
 
-    // Creeen una prueba para http://localhost:3000/youtube y
+    // Creeen una prueba para https://codigo13-react-tawny.vercel.app/youtube y
     // verifiquen si que existe un titulo NAME 33
+
     it("Prueba Youtube", () =>{
-        cy.visit("http://localhost:3000/youtube");
+        cy.visit("https://codigo13-react-tawny.vercel.app/youtube");
         cy.contains("name 33");
     })
 
     it("prueba de Login", () =>{
-        cy.visit("http://localhost:3000/login");
+        cy.visit("https://codigo13-react-tawny.vercel.app/login");
         cy.get('[name="email"]').type("pepe@gmail.com");
         cy.get('[name="password"]').type("123456");
         cy.contains("Iniciar session").click();
