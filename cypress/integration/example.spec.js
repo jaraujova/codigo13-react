@@ -1,4 +1,5 @@
 // para poder evitar el erro de cy is not defined vamos a definir a cy como global
+
 /* global cy */
 
 // Este archivo sera el que contenga nuestras pruebas
@@ -11,7 +12,7 @@ describe("Mi primera prueba con cypress", () => {
       // aca vamos a verificar si es que nuestro home funciona o no
       //cy => cypress
       // Esto va a entrar a localhost:3000 y decirno si funciona o no
-      cy.visit("https://codigo13-react-tawny.vercel.app/");
+      cy.visit("https://codigo13-react-tawny.vercel.app");
       // contains
       // Esto sirve para poder buscar algun texto en nuestra pagina
       // que busque la palabra pokedex
