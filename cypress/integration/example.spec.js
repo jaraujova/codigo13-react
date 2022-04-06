@@ -47,6 +47,8 @@ describe("Mi primera prueba con cypress", () => {
 
     it("Prueba Youtube", () =>{
         cy.visit("https://codigo13-react-tawny.vercel.app/youtube");
+
+        //https://codigo13-react-tawny.vercel.app/youtube
         cy.contains("name 33");
     })
 
