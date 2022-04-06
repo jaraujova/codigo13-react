@@ -1,0 +1,50 @@
+
+
+.nav-ecomerce{
+ 
+    background: #fafafa;
+    overflow: hidden;
+
+}
+
+.busqueda{
+    display: flex;
+}
+
+
+.ul-ecomerce{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.li-basket a{
+    color: #1F2937;
+    display: flex;
+    align-items: center;
+}
+
+.li-basket a:hover{
+    color: blue;
+}
+
+.ul-tags{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    margin: 0;
+
+}
+.ul-tags > li a{
+    color: #1f2937;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.fresh {
+    background-color: #EB5757;
+    color: #fff;
+    padding: 3px;
+}
