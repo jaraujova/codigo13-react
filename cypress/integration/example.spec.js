@@ -55,6 +55,7 @@ describe("Mi primera prueba con cypress", () => {
 
     it("prueba de Login", () =>{
         cy.visit("https://codigo13-react-tawny.vercel.app/login");
+
         cy.get('[name="email"]').type("pepe@gmail.com");
         cy.get('[name="password"]').type("123456");
         cy.contains("Iniciar session").click();
@@ -63,7 +64,7 @@ describe("Mi primera prueba con cypress", () => {
         cy.get('[name="gender"]').type("dc");
         cy.get('[name="video_link"]').type("www.google.com");
         cy.get('[name="wallpaper"]').type("www.google.com");
-        cy.contains("Crear").click();
+        cy.contains("Crear");
     
     })
 
